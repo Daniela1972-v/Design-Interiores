@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    font-family: "montserrat", serif;
 }
 
 html {
@@ -12,7 +13,7 @@ html {
 
 header {
     padding: min(5vh, 4rem);
-    background-color: #d4c098;
+    background-color: #5f3711;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -30,6 +31,12 @@ header img {
     
 }
 
+header div nav ul {
+    display: flex;
+    gap: 20px;
+
+}
+
 header nav ul li a {
     text-decoration: none;
     color: white;
@@ -39,16 +46,90 @@ header nav ul li a {
 .section-01 {
     background-image: url(imagens/office-6804135_1280.jpg);
     background-attachment: fixed;
+    padding: min(20vh, 6rem);
     width: 100%;
     height: min(150vh, 40rem);
     display: flex;
 }
 
 .section-01 h1 {
-    font-size: 3.5em;
-    margin: 1.2em;
+    font-size: 2.5em;
+    margin: 10.5rem;
+    text-align: center;
+    font-family: "Manrope", serif;
     color: #f6f6e2;
+    
 }
+
+.section-02 {
+    background-color: #f7f6e4;
+    padding: min(20vh, 6rem);
+    width: 100%;
+    height: min(150vh, 40rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+}
+
+.section-02 h2 {
+    color: rgb(31, 27, 27);
+    font-size: 2.5em;
+    font-weight: 800;
+    
+    text-align: center;
+}
+
+.section-02 p {
+    color: rgb(31, 27, 27);
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 1.2em;
+}
+
+.card img {
+    width: 100%;
+    height: 30rem auto;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.section-03 {
+    background-color: #f7f6e4;
+    padding: min(20vh, 6rem);
+    width: 100%;
+    height: min(150vh, 40rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+
+}
+
+.divpai-03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-03 .div-03 img {
+     width: 110%;
+     height: 20rem;
+     display: block;
+     flex-wrap: wrap;
+}
+
+.section-03 .div-04 img {
+    width: 110%;
+    height: 20rem;
+    display: block;
+    flex-wrap: wrap;
+}
+
+
+
+
 
 
 
