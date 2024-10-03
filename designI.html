@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design de Interiores & Arquitetura</title>
+    <title>LZ Arquitetura & Interiores</title>
     <link rel="shortcut icon" href="imagens/escala-de-arquiteto.png" type="image/x-icon">
     <link rel="stylesheet" href="designI.css">
     <script src="https://kit.fontawesome.com/fdd516a2fb.js" crossorigin="anonymous"></script>
@@ -24,19 +24,19 @@
                     </li>
 
                     <li>
-                        <a href="">A DESIGNER  |</a>
+                        <a href="#orcamento">ORÇAMENTO  |</a>
                     </li>
 
                     <li>
-                        <a href="">ANTES E DEPOIS  |</a>
+                        <a href="#designer">A DESIGNER  |</a>
                     </li>
 
                     <li>
-                        <a href="">PROJETOS  |</a>
+                        <a href="#projetos"> PROJETOS  |</a>
                     </li>
 
                     <li>
-                        <a href="">CONTATO  |</a>
+                        <a href="#contato">CONTATO  |</a>
                     </li>
                 </ul>
             </nav>
@@ -46,16 +46,23 @@
     </header>
     
     <main>
-    <section class="section-01">
-        <div>
-        <h1>TENHA A CASA QUE VOCÊ <br>
-            SEMPRE SONHOU EM MORAR.</h1>
+    <section class="section-01" id="orcamento">
+        
+        <h1>TENHA  A CASA QUE VOCÊ <br>
+            <span>SEMPRE SONHOU EM MORAR</span> </h1>
+        
+
+        <!-- Criamos uma Div para diferenciar o botão. -->
+        <div class="botao1">
+            <a href="tela3.html">
+                <button>ORÇAMENTO</button>
+            </a>
         </div>
        
 
     </section>
 
-    <section class="section-02">
+    <section class="section-02" id="designer">
         
         <div class="div1-section2">
         <h2>Especializada em <br>
@@ -74,40 +81,146 @@
 
     </section>
 
-    <section class="section-03">
+    <section class="section-03" id="projetos">
 
-        <div class="divpai-03">
-        <div class="div-03">
-            <img src="imagens/bedroom-7921915_1280.jpg" alt="Imagem de um quarto" loading="lazy">
-        </div>
+        <p>CONHEÇA NOSSOS PROJETOS</p>
+        <hr class="line1">
 
-        <div class="div-03">
-            <img src="imagens/house-1477041_1280.jpg" alt="Fachada de uma casa" loading="lazy" loading="lazy">
-        </div>
+        
 
-        <div class="div-03">
+        <!-- Criamos a  Div (pai) com mais 3 div. -->
+    <div class="div-decoracao">
+        <div class="box">
+        <!-- Criamos 3 div  para colocar uma imagem em cada uma -->
+          <div class="box1">
             <img src="imagens/home-1622401_1280.jpg" alt="Imagem de uma sala" loading="lazy">
+          </div>       
+          <div class="box2">
+            <img src="imagens/kitchen-6914223_1280.jpg" alt="Imagem de uma armário" loading="lazy">
+          </div>     
+          <div class="box3">
+            <img src="imagens/office-730681_1280.jpg" alt="Imagem de um escritório" loading="lazy">
+          </div>
         </div>
 
-     </div>
+  
+      </div>
+  
+    
+        
+    </section>
 
-     <div class="divpai-03">
+    <section class="section-04" id="contato">
+       
+        <!-- Criamos uma Div (caixa) para aguardar e diferenciar o mapa do Google maps. -->
+        <div class="div-formulario">
+            <h2>AGENDE UMA REUNIÃO</h2> <br>
+            <p>Quer um projeto funcional e que reflita sua personalidade?  <br>
+            Venha tomar um café com a gente! Preencha o formulário ao lado e <br>
+            retornaremos assim que possível.</p>
 
-        <div class="div-04">
-            <img src="imagens/home-5835289_1280.jpg" alt="Imagem de uma cozinha">
         </div>
 
-        <div class="div-04">
-            <img src="imagens/kitchen-6914223_1280.jpg" alt="Imagem de um armário">
-        </div>
+      <div class="div-04">
+        
 
-        <div class="div-04">
-            <img src="imagens/office-730681_1280.jpg" alt="Imagem de escritório">
-        </div>
+    <!-- Criamos um formulario para agendar uma avaliação -->
+    <form class="avaliacao">
+        <!-- tag Label = Especifica qual o “rótulo” do input a que se refere. -->
+        <label for="nome">Nome:</label>
+        <!-- tipo button para receber dados (Nome Completo) -->
+        <input type="text" name="nome" required placeholder="Nome Completo"> <br> <br>
 
-     </div>
+        <label for="telefone">Tel/Cel:</label>
+        <input type="number" name="telefone" required placeholder="WhatsApp"> <br> <br>
+
+
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="Seu melhor e-mail"> <br> <br>
+
+        <label for="mensagem">Mensagem:</label> <br>
+        <!-- tag textarea= especifica a largura visível de uma área de texto -->
+            <textarea cols="30" rows="10" placeholder="Digite sua mensagem"></textarea> <br> <br>
+            <!-- tipo button para enviar os dados -->
+            <input class="enviar" type="submit" value="Enviar">
+
+        
+
+    </form>
+</div>
+
+
 
     </section>
+
+    <!--  Footer = Usada para abrir e habilitar rodapé para a página -->
+   <footer>
+  
+    <!--  Criamos uma Div (caixa) para aguardar e diferenciar a logo (img) do restante do rodapé -->
+     <div class="div-logo-footer">
+ 
+         <div>
+             <img src="imagens/bussola.png" alt="logo da pagina">
+         </div>
+ 
+     </div>
+            
+     <!-- Criamos uma Div (caixa) para aguardar e diferenciar o Subtítulo e parágrafo -->
+     <div>
+         <!-- (h3) Subtítulo -->
+        <h3>Nossa Loja</h3>
+        <!-- (p) Parágrafo -->
+        <p>Av. Santo Amaro, 1047 – sala 1802 <br>
+            Vila Nova Conceição, São Paulo/SP</p>
+     </div>
+ 
+     <!-- Criamos uma Div (caixa) para aguardar e diferenciar as listas não ordenadas do rodapé -->
+     <div class="div-list-footer">
+         <nav>
+             <ul>
+                 <li>
+                     <a href="">CASAS</a>
+                 </li>
+              
+                 <li>
+                     <a href="">APARTAMENTOS</a>
+                 </li>
+ 
+                 <li>
+                     <a href="">ESCRITÓRIOS</a>
+                 </li>
+             </ul>
+         </nav>
+     </div>
+   
+     <!-- Criamos uma Div (caixa) para aguardar e diferenciar os ícones -->
+     <div class="div-sociais">
+ 
+         <i class="fa-brands fa-instagram"></i>
+         <i class="fa-brands fa-whatsapp"></i>
+         <i class="fa-brands fa-facebook-f"></i>
+ 
+     </div>
+ 
+ </footer>
+ 
+  <!-- VLibras= Tradução automática do português para libras. Tornar a página mais acessível para os usuários surdos. -->
+ 
+ <div vw class="enabled">
+     <div vw-access-button class="active"></div>
+     <div vw-plugin-wrapper>
+       <div class="vw-plugin-top-wrapper"></div>
+     </div>
+   </div>
+   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+   <script>
+     new window.VLibras.Widget('https://vlibras.gov.br/app');
+   </script>
+
+    
 </main>
 </body>
+
+
+
 </html>
