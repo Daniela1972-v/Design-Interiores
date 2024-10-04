@@ -127,7 +127,7 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 
 .section-02 h2 {
     color: rgb(31, 27, 27);
-    font-size: 2.3em;
+    font-size: 2.2em;
     font-weight: 800;
     text-align: center;
     flex-wrap: wrap;
@@ -137,7 +137,7 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
     color: rgb(31, 27, 27);
     font-size: 1.2em;
     font-weight: 600;
-    margin: 1.2em;
+    margin: 0.7em;
     flex-wrap: wrap;
 }
 
@@ -174,25 +174,16 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 
 .section-03 .line1 {
     width: 50%; /*Largura da linha*/
-    margin: 9px auto; /* Espaçamento de 40px top e Bottom Primeiro valor( encima e embaixo) Segundo valor automática (direita e esquerda)*/
+    margin: 9px auto; 
 
 }
-
-.section-03 p {
-    color: rgb(31, 27, 27);
-    font-size: 2.5em;
-    font-weight: 300;
-    margin: 9px;
-    text-align: center;
-    margin-top: -180px; 
-}
-
 
     
 .div-decoracao {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -110px;
 }
 
 .box {
@@ -206,6 +197,8 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
     margin: 10rem auto;
     display: block; 
     flex-wrap: wrap;
+    position: relative;
+    
  }
 
 .div-decoracao .box1 img:hover {
@@ -243,67 +236,62 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
     border-radius: 10px; /*Arredondamento da caixa*/
  }
 
+ 
 
 .section-04 {
-    background-color: #d4c098;
+  
+    background-image: url(imagens/home-5835289_1280.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     padding: min(20vh, 7rem);
     width: 100%;
     height: min(150vh, 40rem);
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-.div-formulario {
-      display: block;
-     
-    
-}
-.div-formulario h2 {
-    color: rgb(150, 127, 127); /*Cor da letra*/
-    font-size: 2.3em; /*Tamanho da letra*/
-    font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    font-weight: bold; /*Peso/Espressura da letra*/
-    
-}
 
-.div-formulario p {
-    color: rgb(150, 127, 127); /*Cor da letra*/
-    font-size: 1.3em; /*Tamanho da letra*/
+
+
+.section-04 p {
+    color: rgb(2, 2, 2); /*Cor da letra*/
+    font-size: 2.5rem; /*Tamanho da letra*/
     font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    font-weight: 500; /*Peso/Espressura da letra*/
+    font-weight: bolder; /*Peso/Espressura da letra*/
+    text-align: center;
+    margin: 1.5em;
    
 }
 
-
-.section-04 .avaliacao {
-    text-align: center; /*Alinhamento do formulário a direita*/
-    
-}
-
-/* Chamamos a label para estilização.*/
-.section-04 label {
-    
-    color: rgb(150, 127, 127);  /*Cor da letra*/
-    font-size: 1.1em; /*Tamanho da letra*/
-    font-weight: bold; /*Peso/Espressura da letra*/
+.botao2 {
+    text-align: center; /*Usada para centralizar o botão*/
+    display: block;    
+    flex-direction: column;
+    flex-wrap: wrap;
 
 }
 
-/* Chamamos a input para estilização.*/
-.section-04 input {
-    padding: 10px; /*Tamanho da caixa*/
-    width: 250px; /*Largura da caixa*/
-    border-color: #5f3711; /*Cor da borda*/
+
+.section-04 button { 
+padding: 20px; /*Tamanho do preenchimento interno do botão*/
+border-radius: 50px; /*Borda arredondada do botão*/
+width: 200px; /*Tamanho lateral do botão (largura)*/
+border-color: #5f3711; /*Cor da borda*/
+border-radius: 40px; /*Arredondamento da borda do botão*/
+margin: 30px; /*Margem em volta do Button*/
+cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do mouse está sobre um elemento.*/
+
+
 }
 
-/* Chamamos a input "Enviar" para estilização.*/
-.section-04 .enviar {
-    padding: 10px; /*Tamanho da caixa*/
-    width: 100px; /*Largura da caixa*/
-    border-color: #5f3711; /*Cor da borda*/
+.section-04 a button {
+ color: rgb(119, 136, 141); 
+
 }
+
+
 
 
 footer {
@@ -367,15 +355,21 @@ footer div p {
 
 
 
-@media (max-width: 934px) {
+@media (min-width:410px) and (max-width: 969px) {
 
     header img {
         width: 3rem;
         height: 2rem;
     }
 
+    header a {
+        font-size: 0.5rem;
+    }
+
+    
+
     .section-01 {
-        padding: 9rem;
+        padding: 1.2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -387,59 +381,169 @@ footer div p {
         font-size: 1rem;
         text-align: left;
         margin: 1rem;
+        
     }
 
     .section-01 .botao1 {
-        width: 10px;
+        width: 250px;
         height: auto;
-        text-align: left;
-        margin: 1rem;
+        text-align: center;
+         margin: 1rem;
     }
 
-    
+    .section-02 {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
     .div1-section2 h2 {
-        font-size: 2rem;
-        line-height: 1.3;
+        font-size: 1.7rem;
+        line-height: 1.5;
         text-align: left;
-        width: 100%;
-        padding: 7rem;
-        margin: 5em;
+        padding: 5rem;
+        margin: 0.5rem;
+        
+        
+    
         
     }
 
     .div1-section2 p {
-        font-size: 1.5rem;
-        text-align: left;
-        width: 100%;
-        padding: 4rem;
+        font-size: 0.9rem;
+        text-align: center;
+        flex-direction: row;
+        margin-left: 100px;
+        width: 80%;
+        line-height: 1.3;
         margin: 5em;
        
     }
 
     .section-03 p {
-        font-size: 2rem;
-        line-height: 1.3;
+        font-size: 1.7rem;
         text-align: center;
-        width: 100%;
-        padding: 4rem;
-        margin: 5em;
+        flex-direction: row;
+        margin-left: 10px;
+        width: 80%;
+        line-height: 1.3;
+        margin: 1em;
     }
 
     .div-decoracao .box {
         display:block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12.2rem;
+        margin-bottom: 10px;
         flex-wrap: wrap;
+    }
+
+    .div-decoracao .box1 img {
+        margin: 5rem;
+        max-width: 40rem;
+        margin-top: 30px;
+        
     }
 
     .div-decoracao .box1 {
-        width: 6rem;
-        height: auto;
+        width: 2rem;
+        height: 30px;
         display:block;
-        flex-wrap: wrap;
+        text-align:  center;
+        justify-content: center;
+        flex-direction: column;
+        margin: -5rem;
+        
+    }
+
+    .div-decoracao .box1 img {
+        margin-top: 2rem;
+        width: 22rem;
+        height: auto;
+        text-align: center;
+    }
+
+    .div-decoracao .box2 {
+        width: 1.2rem;
+        height: 30px;
+        display:block;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 12.2rem;
+        margin-bottom: 10px;
+        margin: -5rem;
+        
+    }
+
+    
+
+    .div-decoracao .box3 {
+        width: 2rem;
+        height: 30px;
+        display:block;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: -5rem;
     }
 
 
+
+    .section-04 {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-04 p {
     
+            font-size: 1.7rem;
+            text-align: center;
+            flex-direction: row;
+            margin-left: 10px;
+            width: 80%;
+            line-height: 1.3;
+            margin: 1em;
+    }
+
+    .section-04 .botao2 {
+        width: 250px;
+        height: auto;
+        text-align: end;
+        display: block;
+        flex-direction: column;
+         margin: 1rem;
+    }
+        
+
+    footer img {
+        width: 3rem;
+        height: 2rem;
+
+    }
+
+    footer p {
+        font-size: 0.1rem;
+    }
+
+    footer a {
+        font-size: 0.5rem;
+    }
+
+    footer i {
+        display: block;
+        margin-top: 10px;
+
+    }
+
     
+
 
     .whatsapp img {
         width: 3.5rem;
