@@ -19,7 +19,7 @@ header {
     background-color: #5f3711;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: sticky;
     top: 0;
@@ -45,6 +45,23 @@ header nav ul li a {
     color: white;
     display: flex;
 }
+ /*estilização do ícone do whatsapp*/
+.whatsapp {
+    position: relative; /*Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
+
+}
+
+/*Estilizando a imagem dentro da classe*/
+.whatsapp img {
+    position: fixed; /*Mantém a imagem em umaposição fixa na tela, mesmo rolando a tela */
+    bottom: 20px;  /*Define a distância da imagem em relação a parte inferior da tela*/
+    right: 20px; /*Define a distância da imagem em relação á direita da tela*/
+    height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporcão*/
+    width: 5rem;
+ 
+}
+
+
 
 .section-01 {
     background-image: url(imagens/office-6804135_1280.jpg); /*imagem de fundo*/
@@ -69,8 +86,7 @@ header nav ul li a {
 
 .section-01 span {
         color: #dfb38c; /*Cor da letra*/
-       
-        
+           
 }
 
 
@@ -92,9 +108,9 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 
 
 }
-/*Estilização a Âncora do botão da section 01*/
+
 .section-01 a button {
- color: rgb(119, 136, 141); /*Cor da letra*/
+ color: rgb(119, 136, 141); 
 
 }
 
@@ -114,6 +130,7 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
     font-size: 2.3em;
     font-weight: 800;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .section-02 p {
@@ -121,6 +138,7 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
     font-size: 1.2em;
     font-weight: 600;
     margin: 1.2em;
+    flex-wrap: wrap;
 }
 
 
@@ -132,14 +150,16 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 }
 .card img {
     width: 80%;
-    height: 20rem auto;
+    height: 15rem auto;
     opacity: 0.2;
-    transition: 0.5s; 
+    transition: 0.5s;
+    flex-wrap: wrap;
 }
 
 .card img:hover {
     transform: translateY(0px); /* Move o conteúdo para sua posição original ao passar o mouse */
     opacity: 1; /* Aumenta a opacidade para 100% ao passar o mouse */
+    
 }
 
 
@@ -164,7 +184,7 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
     font-weight: 300;
     margin: 9px;
     text-align: center;
-    margin-top: -190px; 
+    margin-top: -180px; 
 }
 
 
@@ -177,50 +197,51 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 
 .box {
     display: flex;
+    gap: 15px;
     
 }
 
 .div-decoracao .box1 img{
-    width: 25rem;
+    width: 20rem;
     margin: 10rem auto;
-    display: block; /*Garantindo que a imagem se comporte como um bloco*/
+    display: block; 
+    flex-wrap: wrap;
  }
 
 .div-decoracao .box1 img:hover {
-    width: 30rem; /*Largura da Caixa*/
-    height: 25rem; /*Altura da caixa*/
+    width: 25rem; /*Largura da Caixa*/
+    height: 15rem; /*Altura da caixa*/
     transition: 0.5s; /*Tempo de transição*/
     border-radius: 10px; /*Arredondamento da caixa*/
 }
 
  .div-decoracao .box2 img{
-    width: 25rem;
+    width: 20rem;
     margin: 10rem auto;
-    display: block; /*Garantindo que a imagem se comporte como um bloco*/
+    display: block; 
+    flex-wrap: wrap;
  }
 
  .div-decoracao .box2 img:hover {
-    width: 30rem; /*Largura da Caixa*/
-    height: 25rem; /*Altura da caixa*/
+    width: 25rem; /*Largura da Caixa*/
+    height: 15rem; /*Altura da caixa*/
     transition: 0.5s; /*Tempo de transição*/
     border-radius: 10px; /*Arredondamento da caixa*/
 }
  
  .div-decoracao .box3 img{
-    width: 25rem;
+    width: 20rem;
     margin: 10rem auto;
-    display: block; /*Garantindo que a imagem se comporte como um bloco*/
+    display: block;
+    flex-wrap: wrap;
  }
 
  .div-decoracao .box3 img:hover {
-    width: 30rem; /*Largura da Caixa*/
-    height: 25rem; /*Altura da caixa*/
+    width: 25rem; /*Largura da Caixa*/
+    height: 15rem; /*Altura da caixa*/
     transition: 0.5s; /*Tempo de transição*/
     border-radius: 10px; /*Arredondamento da caixa*/
  }
-
-
-
 
 
 .section-04 {
@@ -240,7 +261,7 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
     
 }
 .div-formulario h2 {
-    color: whitesmoke; /*Cor da letra*/
+    color: rgb(150, 127, 127); /*Cor da letra*/
     font-size: 2.3em; /*Tamanho da letra*/
     font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: bold; /*Peso/Espressura da letra*/
@@ -248,7 +269,7 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 }
 
 .div-formulario p {
-    color: whitesmoke; /*Cor da letra*/
+    color: rgb(150, 127, 127); /*Cor da letra*/
     font-size: 1.3em; /*Tamanho da letra*/
     font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: 500; /*Peso/Espressura da letra*/
@@ -264,7 +285,7 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 /* Chamamos a label para estilização.*/
 .section-04 label {
     
-    color: #f7f6e4;  /*Cor da letra*/
+    color: rgb(150, 127, 127);  /*Cor da letra*/
     font-size: 1.1em; /*Tamanho da letra*/
     font-weight: bold; /*Peso/Espressura da letra*/
 
@@ -285,11 +306,6 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 }
 
 
-
-
-
-
-
 footer {
     padding: min(5vh, 4rem); /*Tamanho/preenchimento do Footer*/
     background-color: #5f3711; /*Cor de fundo*/
@@ -298,7 +314,6 @@ footer {
     gap: 15px; /*Espaçamento entre os elementos*/
     width: 100%;
     align-items: center;
-    position: sticky;
     top: 0;
     left: 0;
     z-index: 999;
@@ -351,6 +366,104 @@ footer div p {
 }
 
 
+
+@media (max-width: 934px) {
+
+    header img {
+        width: 3rem;
+        height: 2rem;
+    }
+
+    .section-01 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .section-01 h1 {
+        font-size: 1rem;
+        text-align: left;
+        margin: 1rem;
+    }
+
+    .section-01 .botao1 {
+        width: 10px;
+        height: auto;
+        text-align: left;
+        margin: 1rem;
+    }
+
+    
+    .div1-section2 h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        text-align: left;
+        width: 100%;
+        padding: 7rem;
+        margin: 5em;
+        
+    }
+
+    .div1-section2 p {
+        font-size: 1.5rem;
+        text-align: left;
+        width: 100%;
+        padding: 4rem;
+        margin: 5em;
+       
+    }
+
+    .section-03 p {
+        font-size: 2rem;
+        line-height: 1.3;
+        text-align: center;
+        width: 100%;
+        padding: 4rem;
+        margin: 5em;
+    }
+
+    .div-decoracao .box {
+        display:block;
+        flex-wrap: wrap;
+    }
+
+    .div-decoracao .box1 {
+        width: 6rem;
+        height: auto;
+        display:block;
+        flex-wrap: wrap;
+    }
+
+
+    
+    
+
+    .whatsapp img {
+        width: 3.5rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+ 
 
 
 
