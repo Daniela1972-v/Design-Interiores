@@ -375,7 +375,7 @@ footer div p {
 
     .section-02 {
         padding: 1em;
-        display: flex;
+        display: block;
         flex-direction: column;
         justify-content: center;
         align-items: center;
