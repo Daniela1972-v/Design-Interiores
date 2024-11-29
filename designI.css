@@ -57,7 +57,7 @@ header nav ul li a {
     bottom: 20px;  /*Define a distância da imagem em relação a parte inferior da tela*/
     right: 20px; /*Define a distância da imagem em relação á direita da tela*/
     height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporcão*/
-    width: 5rem;
+    width: 3rem;
  
 }
 
